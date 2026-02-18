@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flip Tiles — Scenes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="stage" id="stage">
+    <div class="bg" id="bg"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <!-- Double-tap hotspot (top-left) to show/hide HUD -->
+    <div class="hotspot" id="hotspot" aria-hidden="true"></div>
+
+    <div class="tiles" id="tiles"></div>
+
+    <!-- HUD (hidden by default). Show/hide: double-tap top-left corner -->
+    <div class="hud" id="hud">
+      <button class="btn" id="play" type="button">Play</button>
+      <button class="btn" id="reset" type="button">Reset</button>
+      <label class="btn file">
+        Background
+        <input id="bgFile" type="file" accept="image/*">
+      </label>
+    </div>
+  </div>
+
+  <script src="./config.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
